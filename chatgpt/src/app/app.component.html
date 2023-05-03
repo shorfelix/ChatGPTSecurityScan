@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to ChatGPT Clone!
+  </h1>
+  <mat-form-field>
+    <mat-label>Enter your prompt</mat-label>
+    <input matInput [(ngModel)]="promptText">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="generateText()">Generate Text</button>
+  <div>
+    <h2>Generated Text:</h2>
+    <p>{{ generatedText }}</p>
+  </div>
+</div>
